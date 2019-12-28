@@ -1,156 +1,119 @@
 import React from "react";
+import FlexItems from "./FlexItems";
 
 export default function Flex() {
   return (
     <div>
       <section>
-        <h4>flex-direction</h4>
-        <div className="fd-r">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <span className="section-title">flex-direction</span>
+        <p>
+          <code>flex-direction: row;</code>
+          <samp>
+            <FlexItems ClassNameFlex="fd-r" />
+          </samp>
+        </p>
 
-        <br />
+        <p>
+          <code>flex-direction: row-reverse;</code>
+          <samp>
+            <FlexItems ClassNameFlex="fd-rr" />
+          </samp>
+        </p>
 
-        <div className="fd-rr">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <p>
+          <code>flex-direction: column;</code>
+          <samp>
+            <FlexItems ClassNameFlex="fd-c" />
+          </samp>
+        </p>
 
-        <br />
-
-        <div className="fd-c">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
-
-        <br />
-
-        <div className="fd-cr">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <p>
+          <code>flex-direction: column-reverse;</code>
+          <samp>
+            <FlexItems ClassNameFlex="fd-cr" />
+          </samp>
+        </p>
       </section>
 
-      <br />
-
       <section>
-        <h4>flex-wrap</h4>
-        <div className="fw-nw">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <span className="section-title">flex-wrap</span>
 
-        <br />
+        <p>
+          <code>flex-wrap: nowrap;</code>
+          <samp>
+            <FlexItems ClassNameFlex="fw-nw" />
+          </samp>
+        </p>
 
-        <div className="fw-w">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <p>
+          <code>flex-wrap: wrap;</code>
+          <samp>
+            <FlexItems ClassNameFlex="fw-w" />
+          </samp>
+        </p>
 
-        <br />
-
-        <div className="fw-wr">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <p>
+          <code>flex-wrap: wrap-reverse;</code>
+          <samp>
+            <FlexItems ClassNameFlex="fw-wr" />
+          </samp>
+        </p>
       </section>
 
-      <br />
-
       <section>
-        <h4>flex-flow</h4>
-        <div className="ff-rw">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <span className="section-title">flex-flow</span>
+        <p>
+          <code>flex-flow: row wrap;</code>
+          <samp>
+            <FlexItems ClassNameFlex="ff-rw" />
+          </samp>
+        </p>
       </section>
 
-      <br />
-
       <section>
-        <h4>justify-content</h4>
-        <div className="jc-fs">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <span className="section-title">justify-content</span>
 
-        <br />
+        <p>
+          <code>justify-content: flex-start;</code>
+          <samp>
+            <FlexItems ClassNameFlex="jc-fs" />
+          </samp>
+        </p>
 
-        <div className="jc-fe">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <p>
+          <code>justify-content: flex-end;</code>
+          <samp>
+            <FlexItems ClassNameFlex="jc-fe" />
+          </samp>
+        </p>
 
-        <br />
+        <p>
+          <code>justify-content: center;</code>
+          <samp>
+            <FlexItems ClassNameFlex="jc-c" />
+          </samp>
+        </p>
 
-        <div className="jc-c">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <p>
+          <code>justify-content: space-between;</code>
+          <samp>
+            <FlexItems ClassNameFlex="jc-sb" />
+          </samp>
+        </p>
 
-        <br />
+        <p>
+          <code>justify-content: space-evenly;</code>
+          <samp>
+            <FlexItems ClassNameFlex="jc-se" />
+          </samp>
+        </p>
 
-        <div className="jc-sb">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
-
-        <br />
-
-        <div className="jc-se">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
-
-        <br />
-
-        <div className="jc-sa">
-          <div className="f-item inside-item">1</div>
-          <div className="f-item inside-item">2</div>
-          <div className="f-item inside-item">3</div>
-          <div className="f-item inside-item">4</div>
-          <div className="f-item inside-item">5</div>
-        </div>
+        <p>
+          <code>justify-content: space-around;</code>
+          <samp>
+            <FlexItems ClassNameFlex="jc-sa" />
+          </samp>
+        </p>
       </section>
     </div>
   );
