@@ -1,0 +1,86 @@
+/* ========== Parent ==========*/
+/* flex-direction */
+.fd-r {
+  display: flex;
+  flex-direction: row;
+}
+.fd-rr {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.fd-c {
+  display: flex;
+  flex-direction: column;
+}
+.fd-cr {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* flex-wrap */
+.fw-nw {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100px;
+}
+
+.fw-w {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+}
+
+.fw-wr {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100px;
+}
+
+/* flex-flow */
+.ff-rw {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100px;
+}
+
+/* justify-content */
+.jc-fs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.jc-fe {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.jc-c {
+  display: flex;
+  justify-content: center;
+}
+
+.jc-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jc-se {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.jc-sa {
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-item {
+}
+
+.inside-item {
+  border: solid gray;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
