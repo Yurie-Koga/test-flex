@@ -3,7 +3,7 @@ import Flex from "./components/Flex";
 
 function App() {
   return (
-    <div>
+    <div className="mainBox">
       <Flex />
     </div>
   );

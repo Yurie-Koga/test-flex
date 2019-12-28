@@ -3,7 +3,7 @@ import FlexItems from "./FlexItems";
 
 export default function Flex() {
   return (
-    <div>
+    <div className="flexBox">
       <section>
         <span className="section-title">flex-direction</span>
         <p>
