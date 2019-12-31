@@ -74,20 +74,27 @@ code {
 .fw-w {
   display: flex;
   flex-wrap: wrap;
-  width: 100px;
+  width: 200px;
 }
 
 .fw-wr {
   display: flex;
   flex-wrap: wrap-reverse;
-  width: 100px;
+  width: 200px;
 }
 
 /* flex-flow */
 .ff-rw {
   display: flex;
   flex-flow: row wrap;
-  width: 100px;
+  width: 200px;
+}
+
+.ff-cw {
+  display: flex;
+  flex-flow: column wrap;
+  height: 200px;
+  width: 200px;
 }
 
 /* justify-content */
@@ -125,6 +132,26 @@ code {
 .ai-s {
   display: flex;
   align-items: stretch;
+}
+
+.ai-fs {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ai-fe {
+  display: flex;
+  align-items: flex-end;
+}
+
+.ai-c {
+  display: flex;
+  align-items: center;
+}
+
+.ai-b {
+  display: flex;
+  align-items: baseline;
 }
 
 /* ========== Child ==========*/

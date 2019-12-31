@@ -15,7 +15,10 @@ export default function Flex() {
     { code: "flex-wrap: wrap-reverse;", className: "fw-wr" }
   ];
 
-  const flexFlow = [{ code: "flex-flow: row wrap;", className: "ff-rw" }];
+  const flexFlow = [
+    { code: "flex-flow: row wrap;", className: "ff-rw" },
+    { code: "flex-flow: column wrap;", className: "ff-cw" }
+  ];
 
   const justifyContent = [
     { code: "justify-content: flex-start;", className: "jc-fs" },
@@ -24,6 +27,14 @@ export default function Flex() {
     { code: "justify-content: space-between;", className: "jc-sb" },
     { code: "justify-content: space-evenly;", className: "jc-se" },
     { code: "justify-content: space-around;", className: "jc-sa" }
+  ];
+
+  const alignItems = [
+    { code: "align-items: stretch;", className: "ai-s" },
+    { code: "align-items: flex-start;", className: "ai-fs" },
+    { code: "align-items: flex-end;", className: "ai-fe" },
+    { code: "align-items: center;", className: "ai-c" },
+    { code: "align-items: baseline;", className: "ai-b" }
   ];
 
   return (
@@ -79,28 +90,45 @@ export default function Flex() {
       <section>
         <span className="section-title">align-items</span>
 
-        <p>
-          <code>align-items: stretch;</code>
-          <samp>
-            <div className="ai-s">
-              <div className="f-item inside-item" style={{ height: "30px" }}>
-                1
+        {alignItems.map(x => (
+          <p>
+            <code>{x.code}</code>
+            <samp>
+              <div className={x.className}>
+                <div
+                  className="f-item inside-item"
+                  style={{ height: "auto", fontSize: "5em" }}
+                >
+                  1
+                </div>
+                <div
+                  className="f-item inside-item"
+                  style={{ height: "auto", fontSize: "2em" }}
+                >
+                  2
+                </div>
+                <div
+                  className="f-item inside-item"
+                  style={{ height: "auto", fontSize: "3em" }}
+                >
+                  3
+                </div>
+                <div
+                  className="f-item inside-item"
+                  style={{ height: "auto", fontSize: "4em" }}
+                >
+                  4
+                </div>
+                <div
+                  className="f-item inside-item"
+                  style={{ height: "auto", fontSize: "5em" }}
+                >
+                  5
+                </div>
               </div>
-              <div className="f-item inside-item" style={{ height: "50px" }}>
-                2
-              </div>
-              <div className="f-item inside-item" style={{ height: "60px" }}>
-                3
-              </div>
-              <div className="f-item inside-item" style={{ height: "20px" }}>
-                4
-              </div>
-              <div className="f-item inside-item" style={{ height: "90px" }}>
-                5
-              </div>
-            </div>
-          </samp>
-        </p>
+            </samp>
+          </p>
+        ))}
       </section>
     </div>
   );
