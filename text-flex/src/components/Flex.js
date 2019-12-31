@@ -2,116 +2,103 @@ import React from "react";
 import FlexItems from "./FlexItems";
 
 export default function Flex() {
+  const flexDirection = [
+    { code: "flex-direction: row;", className: "fd-r" },
+    { code: "flex-direction: row-reverse;", className: "fd-rr" },
+    { code: "flex-direction: column;", className: "fd-c" },
+    { code: "flex-direction: column-reverse;", className: "fd-cr" }
+  ];
+
+  const flexWrap = [
+    { code: "flex-wrap: nowrap;", className: "fw-nw" },
+    { code: "flex-wrap: wrap;", className: "fw-w" },
+    { code: "flex-wrap: wrap-reverse;", className: "fw-wr" }
+  ];
+
+  const flexFlow = [{ code: "flex-flow: row wrap;", className: "ff-rw" }];
+
+  const justifyContent = [
+    { code: "justify-content: flex-start;", className: "jc-fs" },
+    { code: "justify-content: flex-end;", className: "jc-fe" },
+    { code: "justify-content: center;", className: "jc-c" },
+    { code: "justify-content: space-between;", className: "jc-sb" },
+    { code: "justify-content: space-evenly;", className: "jc-se" },
+    { code: "justify-content: space-around;", className: "jc-sa" }
+  ];
+
   return (
     <div className="flexBox">
       <section>
         <span className="section-title">flex-direction</span>
-        <p>
-          <code>flex-direction: row;</code>
-          <samp>
-            <FlexItems ClassNameFlex="fd-r" />
-          </samp>
-        </p>
-
-        <p>
-          <code>flex-direction: row-reverse;</code>
-          <samp>
-            <FlexItems ClassNameFlex="fd-rr" />
-          </samp>
-        </p>
-
-        <p>
-          <code>flex-direction: column;</code>
-          <samp>
-            <FlexItems ClassNameFlex="fd-c" />
-          </samp>
-        </p>
-
-        <p>
-          <code>flex-direction: column-reverse;</code>
-          <samp>
-            <FlexItems ClassNameFlex="fd-cr" />
-          </samp>
-        </p>
+        {flexDirection.map(x => (
+          <p>
+            <code>{x.code}</code>
+            <samp>
+              <FlexItems ClassNameFlex={x.className} />
+            </samp>
+          </p>
+        ))}
       </section>
 
       <section>
         <span className="section-title">flex-wrap</span>
-
-        <p>
-          <code>flex-wrap: nowrap;</code>
-          <samp>
-            <FlexItems ClassNameFlex="fw-nw" />
-          </samp>
-        </p>
-
-        <p>
-          <code>flex-wrap: wrap;</code>
-          <samp>
-            <FlexItems ClassNameFlex="fw-w" />
-          </samp>
-        </p>
-
-        <p>
-          <code>flex-wrap: wrap-reverse;</code>
-          <samp>
-            <FlexItems ClassNameFlex="fw-wr" />
-          </samp>
-        </p>
+        {flexWrap.map(x => (
+          <p>
+            <code>{x.code}</code>
+            <samp>
+              <FlexItems ClassNameFlex={x.className} />
+            </samp>
+          </p>
+        ))}
       </section>
 
       <section>
         <span className="section-title">flex-flow</span>
-        <p>
-          <code>flex-flow: row wrap;</code>
-          <samp>
-            <FlexItems ClassNameFlex="ff-rw" />
-          </samp>
-        </p>
+        {flexFlow.map(x => (
+          <p>
+            <code>{x.code}</code>
+            <samp>
+              <FlexItems ClassNameFlex={x.className} />
+            </samp>
+          </p>
+        ))}
       </section>
 
       <section>
         <span className="section-title">justify-content</span>
+        {justifyContent.map(x => (
+          <p>
+            <code>{x.code}</code>
+            <samp>
+              <FlexItems ClassNameFlex={x.className} />
+            </samp>
+          </p>
+        ))}
+      </section>
+
+      <section>
+        <span className="section-title">align-items</span>
 
         <p>
-          <code>justify-content: flex-start;</code>
+          <code>align-items: stretch;</code>
           <samp>
-            <FlexItems ClassNameFlex="jc-fs" />
-          </samp>
-        </p>
-
-        <p>
-          <code>justify-content: flex-end;</code>
-          <samp>
-            <FlexItems ClassNameFlex="jc-fe" />
-          </samp>
-        </p>
-
-        <p>
-          <code>justify-content: center;</code>
-          <samp>
-            <FlexItems ClassNameFlex="jc-c" />
-          </samp>
-        </p>
-
-        <p>
-          <code>justify-content: space-between;</code>
-          <samp>
-            <FlexItems ClassNameFlex="jc-sb" />
-          </samp>
-        </p>
-
-        <p>
-          <code>justify-content: space-evenly;</code>
-          <samp>
-            <FlexItems ClassNameFlex="jc-se" />
-          </samp>
-        </p>
-
-        <p>
-          <code>justify-content: space-around;</code>
-          <samp>
-            <FlexItems ClassNameFlex="jc-sa" />
+            <div className="ai-s">
+              <div className="f-item inside-item" style={{ height: "30px" }}>
+                1
+              </div>
+              <div className="f-item inside-item" style={{ height: "50px" }}>
+                2
+              </div>
+              <div className="f-item inside-item" style={{ height: "60px" }}>
+                3
+              </div>
+              <div className="f-item inside-item" style={{ height: "20px" }}>
+                4
+              </div>
+              <div className="f-item inside-item" style={{ height: "90px" }}>
+                5
+              </div>
+            </div>
           </samp>
         </p>
       </section>

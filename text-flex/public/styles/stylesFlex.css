@@ -121,6 +121,13 @@ code {
   justify-content: space-around;
 }
 
+/* align-items */
+.ai-s {
+  display: flex;
+  align-items: stretch;
+}
+
+/* ========== Child ==========*/
 .f-item {
   display: flex;
   justify-content: center;
