@@ -24,6 +24,11 @@ code {
   margin-bottom: 10px;
 }
 
+.drop-shadow {
+  -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+}
+
 .mainBox {
   display: flex;
   flex-direction: column;

@@ -49,12 +49,12 @@ export default function Flex() {
   return (
     <div className="flexBox">
       <div
-        className="flexBox"
+        className="flexBox drop-shadow"
         style={{ backgroundColor: "#209cee", padding: "10px", color: "white" }}
       >
         <span className="section-title">Parent Property</span>
 
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">flex-direction</span>
           {flexDirection.map(x => (
             <p>
@@ -66,7 +66,7 @@ export default function Flex() {
           ))}
         </section>
 
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">flex-wrap</span>
           {flexWrap.map(x => (
             <p>
@@ -78,7 +78,7 @@ export default function Flex() {
           ))}
         </section>
 
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">flex-flow</span>
           {flexFlow.map(x => (
             <p>
@@ -90,7 +90,7 @@ export default function Flex() {
           ))}
         </section>
 
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">justify-content</span>
           {justifyContent.map(x => (
             <p>
@@ -102,7 +102,7 @@ export default function Flex() {
           ))}
         </section>
 
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">align-items</span>
 
           {alignItems.map(x => (
@@ -146,7 +146,7 @@ export default function Flex() {
           ))}
         </section>
 
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">align-content</span>
           {alignContent.map(x => (
             <p>
@@ -221,11 +221,11 @@ export default function Flex() {
       </div>
 
       <div
-        className="flexBox"
+        className="flexBox drop-shadow"
         style={{ backgroundColor: "#209cee", padding: "10px", color: "white" }}
       >
         <span className="section-title">Child Property</span>
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">order</span>
           <p>
             <code>order: index number;</code>
@@ -249,14 +249,14 @@ export default function Flex() {
           </p>
         </section>
 
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">
             flex-grow, flex-shrink, flex-basis <br />
             => Recommended use flex instead of above them
           </span>
         </section>
 
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">flex</span>
           <p>
             <code>flex: 1 0 20%; // flex-grow flex-shrink flex-basis</code>
@@ -280,7 +280,7 @@ export default function Flex() {
           </p>
         </section>
 
-        <section>
+        <section className="drop-shadow">
           <span className="section-title">align-self</span>
 
           <p>
