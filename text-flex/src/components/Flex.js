@@ -361,6 +361,73 @@ export default function Flex() {
           </p>
         </section>
       </div>
+
+      <div
+        className="flexBox drop-shadow"
+        style={{ backgroundColor: "#209cee", padding: "10px", color: "white" }}
+      >
+        <span className="section-title">Test More</span>
+
+        <section className="drop-shadow">
+          <span className="section-title">column</span>
+          <p>
+            <code>One row</code>
+            <samp>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "300px"
+                }}
+              >
+                <div
+                  className="f-item inside-item"
+                  style={{ width: "400px", height: "auto" }}
+                >
+                  1
+                </div>
+                <div
+                  className="f-item inside-item"
+                  style={{ width: "400px", height: "inherit" }}
+                >
+                  height: inherit;
+                </div>
+              </div>
+            </samp>
+          </p>
+
+          <p>
+            <code>Multiple rows</code>
+            <samp>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "300px"
+                }}
+              >
+                <div
+                  className="f-item inside-item"
+                  style={{ width: "400px", height: "auto" }}
+                >
+                  Row1 <br /> Row2
+                </div>
+                <div
+                  className="f-item inside-item"
+                  style={{
+                    width: "400px",
+                    height: "inherit",
+                    alignItems: "flex-start",
+                    fontSize: "24px"
+                  }}
+                >
+                  alignItems: flex-start; <br /> Row1 <br /> Row2 <br /> Row3
+                </div>
+              </div>
+            </samp>
+          </p>
+        </section>
+      </div>
     </div>
   );
 }
